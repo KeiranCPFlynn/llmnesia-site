@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LLMnesia | Search your LLM chats. Instantly.</title>
+    <meta
+      name="description"
+      content="LLMnesia indexes your AI conversations locally so you can find and reuse answers across platforms."
+    >
+    <meta name="theme-color" content="#0d1117">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LLMnesia | Search your LLM chats. Instantly.">
+    <meta
+      property="og:description"
+      content="Local-first chat search for AI conversations. No servers. Your data stays in your browser."
+    >
+    <meta property="og:image" content="assets/og.png">
+    <meta property="og:url" content="https://keirancpflynn.github.io/llmnesia-site/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LLMnesia | Search your LLM chats. Instantly.">
+    <meta
+      name="twitter:description"
+      content="Index and search your AI chats locally across platforms."
+    >
+    <meta name="twitter:image" content="assets/og.png">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="LLMnesia home">
+          <img src="assets/logo.svg" alt="" width="28" height="28">
+          <span>LLMnesia</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          type="button"
+        >
+          Menu
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#demo">Demo</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#updates">Join founding list</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+            Light mode
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container" id="top">
+        <p class="eyebrow">Local-first memory for AI workflows</p>
+        <h1>Search your LLM chats. Instantly.</h1>
+        <p class="subheadline">
+          LLMnesia indexes your AI conversations locally so you can find and reuse answers across platforms.
+        </p>
+        <div class="hero-cta">
+          <a
+            class="button"
+            href="https://tally.so/r/448MDd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join founding list
+          </a>
+        </div>
+        <p class="trust-note">Local-first. No servers. Your data stays in your browser.</p>
+      </section>
+
+      <section class="proof-strip" aria-label="Supported platforms">
+        <div class="container">
+          <p>Works on:</p>
+          <ul class="chip-list">
+            <li>ChatGPT</li>
+            <li>Claude</li>
+            <li>Gemini</li>
+            <li>Perplexity</li>
+            <li>DeepSeek</li>
+            <li>Grok</li>
+            <li>Mistral</li>
+            <li>Kimi</li>
+            <li>Qwen</li>
+            <li>Google AI Studio</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container" id="features">
+        <h2>Features</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Automatic indexing</h3>
+            <p>Conversations are indexed in the background while you work.</p>
+          </article>
+          <article class="card">
+            <h3>Fast local search</h3>
+            <p>Instant results from your local index with no network round trip.</p>
+          </article>
+          <article class="card">
+            <h3>Jump-to-message</h3>
+            <p>Open the exact thread and jump to the message you were looking for.</p>
+          </article>
+          <article class="card">
+            <h3>Export and backup <span class="tag">Planned</span></h3>
+            <p>Portable backups so you can keep control of your memory over time.</p>
+          </article>
+          <article class="card">
+            <h3>Keyboard shortcuts</h3>
+            <p>Bring up search quickly without breaking your flow.</p>
+          </article>
+          <article class="card">
+            <h3>Local-first privacy</h3>
+            <p>No cloud required, with deletion controls directly in your browser.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-privacy" id="privacy">
+        <div class="container">
+          <h2>Local-first. Private by design.</h2>
+          <ul class="privacy-list">
+            <li>Stored locally in your browser</li>
+            <li>No external servers</li>
+            <li>No cloud sync by default</li>
+            <li>You control export and deletion</li>
+          </ul>
+          <p class="permissions-note">
+            <strong>Permissions explained:</strong>
+            <em>Storage</em> — saves your index and settings locally in your browser.
+            <em>Tabs</em> — navigates you to the right conversation when you open a search result.
+            <em>Active tab</em> — detects which AI platform you are currently visiting.
+            <em>Scripting</em> — injects the search palette and index indicator into AI chat pages.
+            No permission is used to read data from any site other than the AI platforms listed above.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container" id="demo">
+        <h2>Demo</h2>
+        <figure class="browser-mock">
+          <div class="browser-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <img
+            src="assets/demo.png"
+            alt="LLMnesia search overlay preview in a browser window"
+            width="1280"
+            height="720"
+            loading="lazy"
+          >
+        </figure>
+        <p class="demo-caption">Search, preview, jump to the exact spot.</p>
+      </section>
+
+      <section class="section container" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="card-grid">
+          <blockquote class="card quote">
+            <p>"I stopped losing useful prompts between tabs. It feels native and fast."</p>
+            <footer>Priya N., Product Engineer</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>"Local-first was the key for me. I can search everything without sending data anywhere."</p>
+            <footer>Marco L., Security Consultant</footer>
+          </blockquote>
+          <blockquote class="card quote">
+            <p>"The jump-to-message flow saves me time every day when I need old answers."</p>
+            <footer>Jess R., Startup Founder</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section container" id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Does this send my chats to a server?</summary>
+            <p>No. LLMnesia is local-first and keeps indexed data in your browser storage.</p>
+          </details>
+          <details>
+            <summary>Which sites are supported?</summary>
+            <p>ChatGPT, Claude, Gemini, Perplexity, DeepSeek, Grok, Mistral, Kimi, Qwen, and Google AI Studio.</p>
+          </details>
+          <details>
+            <summary>Will it slow down my browser?</summary>
+            <p>Indexing is designed to be lightweight and incremental. Most users should see minimal impact.</p>
+          </details>
+          <details>
+            <summary>Can I delete everything?</summary>
+            <p>Yes. You can clear indexed data locally and control export and deletion behavior.</p>
+          </details>
+          <details>
+            <summary>Is there a paid plan?</summary>
+            <p>LLMnesia is currently free while early. If pricing changes later, early users receive best access and discounts.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-signup container" id="updates">
+        <h2>Founding users</h2>
+        <p>
+          LLMnesia is free while it&rsquo;s in beta. If we ever introduce paid plans, early supporters get preferred
+          terms. Join the founding list to stay in the loop and help steer what we build next.
+        </p>
+        <a
+          class="button"
+          href="https://tally.so/r/448MDd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join founding list
+        </a>
+        <p class="fine-print">Optional. Email is used only for founding access and a small number of important product emails.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav aria-label="Footer">
+          <a href="#privacy">Privacy</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="#updates">Join founding list</a>
+        </nav>
+        <p>&copy; <span id="year"></span> LLMnesia</p>
+      </div>
+    </footer>
+  </body>
+</html>
