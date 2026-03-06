@@ -11,7 +11,7 @@
     doc.classList.toggle("theme-light", isLight);
     if (themeToggle) {
       themeToggle.setAttribute("aria-pressed", String(isLight));
-      themeToggle.textContent = isLight ? "Dark mode" : "Light mode";
+      themeToggle.setAttribute("aria-label", isLight ? "Toggle dark mode" : "Toggle light mode");
     }
   }
 
