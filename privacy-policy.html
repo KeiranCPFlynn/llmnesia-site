@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy | LLMnesia</title>
+    <meta
+      name="description"
+      content="LLMnesia privacy policy. Local-first, no data collection, no servers. Your AI conversation index stays on your device."
+    >
+    <meta name="theme-color" content="#0d1117">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="LLMnesia home">
+          <img src="assets/logo.svg" alt="" width="28" height="28">
+          <span>LLMnesia</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          type="button"
+        >
+          Menu
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Main">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#privacy">Privacy</a>
+          <a href="index.html#demo">Demo</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#updates">Get Early Access</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light mode">
+            <svg class="theme-icon theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="theme-icon theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section container" style="padding-block-start: 6rem;">
+        <h1>Privacy Policy</h1>
+        <p class="section-intro">Last updated: 19 March 2026</p>
+
+        <div class="policy-content">
+          <h2>Overview</h2>
+          <p>LLMnesia is a browser extension that indexes your AI conversations locally on your device. It is built with a local-first, privacy-by-design architecture. We do not collect, transmit, or store any of your data on external servers.</p>
+
+          <h2>Information we collect</h2>
+          <p><strong>We do not collect any personal information.</strong></p>
+          <p>LLMnesia does not collect, transmit, or have access to:</p>
+          <ul>
+            <li>Your name, email address, or account details</li>
+            <li>Your browsing history outside of supported AI platforms</li>
+            <li>Your AI conversation content (it is indexed and stored locally only)</li>
+            <li>Analytics, telemetry, or usage tracking data</li>
+            <li>Cookies or tracking identifiers</li>
+          </ul>
+
+          <h2>How your data is stored</h2>
+          <p>All data created by LLMnesia, including your conversation index and extension settings, is stored locally in your browser using the Chrome Storage API (<code>chrome.storage.local</code>). This data never leaves your device.</p>
+          <p>You can view, export, or delete all stored data at any time through the extension's settings.</p>
+
+          <h2>Browser permissions</h2>
+          <p>LLMnesia requests the following browser permissions, each used solely to provide core functionality:</p>
+          <ul>
+            <li><strong>Storage</strong> &mdash; saves your conversation index and extension settings locally in your browser.</li>
+            <li><strong>Tabs</strong> &mdash; opens the correct conversation when you click a search result.</li>
+            <li><strong>Active Tab</strong> &mdash; detects which supported AI platform you are currently visiting.</li>
+            <li><strong>Scripting</strong> &mdash; injects the search overlay and indexing scripts into supported AI chat pages.</li>
+          </ul>
+
+          <h3>Host permissions</h3>
+          <p>LLMnesia requests host permissions for the following AI platforms only:</p>
+          <ul>
+            <li>ChatGPT (chatgpt.com, chat.openai.com)</li>
+            <li>Claude (claude.ai)</li>
+            <li>Gemini (gemini.google.com)</li>
+            <li>DeepSeek (deepseek.com, chat.deepseek.com)</li>
+            <li>Perplexity (perplexity.ai)</li>
+            <li>Grok (grok.com)</li>
+            <li>Mistral (chat.mistral.ai, mistral.ai)</li>
+            <li>Kimi (kimi.com)</li>
+            <li>Qwen (qwen.ai, chat.qwen.ai)</li>
+            <li>Google AI Studio (aistudio.google.com)</li>
+          </ul>
+          <p>No permission is used to read, collect, or transmit data from any site other than the supported AI platforms listed above. These permissions are used exclusively to index conversation content locally on your device.</p>
+
+          <h2>Third-party services</h2>
+          <p>LLMnesia does not use any third-party services, analytics platforms, advertising networks, or external APIs. There are no network requests made by the extension.</p>
+
+          <h2>Data sharing</h2>
+          <p>We do not sell, transfer, or share any user data with third parties. Since no data is collected or transmitted, there is nothing to share.</p>
+
+          <h2>Data retention and deletion</h2>
+          <p>All data is stored locally on your device. You can delete your data at any time by:</p>
+          <ul>
+            <li>Using the export/delete controls within the extension's settings</li>
+            <li>Uninstalling the extension (this removes all stored data)</li>
+            <li>Clearing your browser's extension storage</li>
+          </ul>
+
+          <h2>Children's privacy</h2>
+          <p>LLMnesia does not knowingly collect any information from anyone, including children under 13. The extension does not collect personal information from any user.</p>
+
+          <h2>Changes to this policy</h2>
+          <p>If we update this privacy policy, we will revise the "Last updated" date at the top of this page. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+          <h2>Contact</h2>
+          <p>If you have questions about this privacy policy, please reach out via the <a href="index.html#contact">contact form</a> on our website.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav aria-label="Footer">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#updates">Get Early Access</a>
+        </nav>
+        <p>&copy; <span id="year"></span> LLMnesia</p>
+      </div>
+    </footer>
+  </body>
+</html>
