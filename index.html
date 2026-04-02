@@ -71,6 +71,32 @@
         </a>
         <span class="trust-note">100% private. Everything stays in your browser.</span>
       </div>
+      <div class="email-capture-divider"><span>or</span></div>
+      <div class="hero-email-capture">
+        <div id="email-capture-fields">
+          <p class="hero-email-label">Get tips, updates &amp; new features</p>
+          <form class="email-capture-form" id="email-capture-form" novalidate>
+            <input type="email" name="email" id="email-capture-input"
+                   placeholder="you@example.com" required autocomplete="email"
+                   aria-label="Email address">
+            <input type="checkbox" name="botcheck" tabindex="-1"
+                   autocomplete="off" class="form-honeypot" aria-hidden="true">
+            <button class="button button-small" type="submit" id="email-capture-submit">Stay updated</button>
+          </form>
+          <p class="hero-email-fine-print" id="email-capture-message"
+             role="status" aria-live="polite">No spam. Unsubscribe any time.</p>
+        </div>
+        <div class="email-capture-success" id="email-capture-success" hidden>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" flex-shrink="0">
+            <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 14l3.5 3.5L19 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div>
+            <strong>You're in!</strong>
+            <p>We'll keep you posted on tips, updates &amp; new features.</p>
+          </div>
+        </div>
+      </div>
       <p class="local-trust-line">Local-first. Your AI conversations never leave your browser.</p>
     </section>
 

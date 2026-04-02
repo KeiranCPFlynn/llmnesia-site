@@ -97,4 +97,56 @@
       }
     });
   }
+
+  var emailCaptureForm = document.getElementById("email-capture-form");
+  var emailCaptureMessage = document.getElementById("email-capture-message");
+  var emailCaptureSubmit = document.getElementById("email-capture-submit");
+  var emailCaptureFields = document.getElementById("email-capture-fields");
+  var emailCaptureSuccess = document.getElementById("email-capture-success");
+
+  if (emailCaptureForm && emailCaptureMessage && emailCaptureSubmit && emailCaptureFields && emailCaptureSuccess) {
+    emailCaptureForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      if (!(emailCaptureForm instanceof HTMLFormElement)) return;
+      if (!emailCaptureForm.checkValidity()) {
+        emailCaptureForm.reportValidity();
+        return;
+      }
+
+      var payload = new FormData(emailCaptureForm);
+      var honeypot = payload.get("botcheck");
+      if (typeof honeypot === "string" && honeypot.trim() !== "") {
+        emailCaptureFields.style.display = "none";
+        emailCaptureSuccess.removeAttribute("hidden");
+        return;
+      }
+
+      emailCaptureSubmit.disabled = true;
+      emailCaptureSubmit.textContent = "Joining...";
+
+      var emailInput = document.getElementById("email-capture-input");
+      try {
+        var ecResponse = await fetch("https://script.google.com/macros/s/AKfycbxmUkdHDfvKH5818w3WfioWp0ALK3NvrzU_tz_8FXE4PjgyG1rdpoc13vIz18P-PGLo/exec", {
+          method: "POST",
+          body: JSON.stringify({ email: emailInput ? emailInput.value.trim() : "" }),
+          headers: { "Content-Type": "text/plain" }
+        });
+        var ecData = null;
+        try { ecData = await ecResponse.json(); } catch (_) {}
+
+        if (!ecResponse.ok || !ecData || ecData.success !== true) {
+          throw new Error("failed");
+        }
+
+        emailCaptureFields.style.display = "none";
+        emailCaptureSuccess.removeAttribute("hidden");
+      } catch (_) {
+        emailCaptureMessage.textContent = "Something went wrong. Please try again.";
+        emailCaptureMessage.setAttribute("data-state", "error");
+        emailCaptureSubmit.disabled = false;
+        emailCaptureSubmit.textContent = "Stay updated";
+      }
+    });
+  }
 })();

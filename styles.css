@@ -32,6 +32,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -319,6 +323,121 @@ h1 {
 .local-trust-line {
   margin: 1.5rem 0 0;
   font-weight: 600;
+}
+
+/* ===== HERO EMAIL CAPTURE ===== */
+.email-capture-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 22rem;
+  margin: 1.75rem auto 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.email-capture-divider::before,
+.email-capture-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.hero-email-capture {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 28rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+}
+
+#email-capture-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.hero-email-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.email-capture-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.email-capture-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  background: hsla(200, 25%, 6%, 0.6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.email-capture-form input[type="email"]:focus {
+  border-color: var(--brand);
+}
+
+.email-capture-form input[type="email"]::placeholder {
+  color: var(--text-muted);
+}
+
+.hero-email-fine-print {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.email-capture-success {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  color: var(--success);
+  text-align: left;
+}
+
+.email-capture-success svg {
+  flex-shrink: 0;
+}
+
+.email-capture-success strong {
+  display: block;
+  font-size: 0.9375rem;
+  line-height: 1.3;
+}
+
+.email-capture-success p {
+  margin: 0.125rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .email-capture-form {
+    flex-direction: column;
+  }
+
+  .email-capture-form .button {
+    width: 100%;
+  }
 }
 
 /* ===== SECTIONS ===== */
